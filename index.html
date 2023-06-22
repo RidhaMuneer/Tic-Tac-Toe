@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <script src="./ticTacToe.js"></script>
+    <!-- <script src="./ticTacToe.js"></script> -->
     <link rel="icon" href="/gamepad-outline.svg" type="icon">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <title>Tic Tac Toe</title>
@@ -13,15 +13,16 @@
 <body>
     <h1>Tic Tac Toe</h1>
     <div class="game-grid">
-        <div id="game-box0"></div>
-        <div id="game-box1"></div>
-        <div id="game-box2"></div>
-        <div id="game-box3"></div>
-        <div id="game-box4"></div>
-        <div id="game-box5"></div>
-        <div id="game-box6"></div>
-        <div id="game-box7"></div>
-        <div id="game-box8"></div>
+        <div id="game-box0" onclick="game.changeContent0()"></div>
+        <div id="game-box1" onclick="game.changeContent1()"></div>
+        <div id="game-box2" onclick="game.changeContent2()"></div>
+        <div id="game-box3" onclick="game.changeContent3()"></div>
+        <div id="game-box4" onclick="game.changeContent4()"></div>
+        <div id="game-box5" onclick="game.changeContent5()"></div>
+        <div id="game-box6" onclick="game.changeContent6()"></div>
+        <div id="game-box7" onclick="game.changeContent7()"></div>
+        <div id="game-box8" onclick="game.changeContent8()"></div>
     </div>
+    <script src="./ticTacToe.js"></script>
 </body>
 </html>
