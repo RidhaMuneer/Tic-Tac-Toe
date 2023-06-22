@@ -10,12 +10,11 @@ var box8 = document.getElementById('game-box8');
 
 const playerFactory = (marker) => {
     this.marker = marker;
-    const getmarker = () => this.marker;
     const won = () => {
         game.showScore(marker);
         game.reset();
     };
-    return {won, getmarker};
+    return {won};
 };
 
 const player1 = playerFactory('X');
@@ -39,6 +38,11 @@ const game = (() => {
         setTimeout(function() {
             containerDiv.remove();
         }, 1500);
+        if(marker === 'X') {
+            counter = 1;
+        }else if(marker === 'O'){
+            counter = 2;
+        }
 
     };
     const reset = () => {
